@@ -89,6 +89,7 @@ public class TestStreamSolutionThree
     {
         int totalEmployee = employees.size();
         double sum = 0;
+
         for (Employee e : employees)
         {
             sum += e.getAge();
@@ -106,7 +107,7 @@ public class TestStreamSolutionThree
      */
     private static double linearAverage(List<? extends Employee> employees)
     {
-        return employees.stream().mapToDouble(Employee::getAge).average().orElse(0d);
+        return employees.stream().mapToInt(Employee::getAge).average().orElse(0);
     }
 
     /**
@@ -118,6 +119,6 @@ public class TestStreamSolutionThree
      */
     private static double concurrentAverage(List<? extends Employee> employees)
     {
-        return employees.parallelStream().mapToDouble(Employee::getAge).average().orElse(0d);
+        return employees.parallelStream().mapToInt(Employee::getAge).average().orElse(0);
     }
 }
