@@ -13,7 +13,6 @@ import org.springframework.util.StopWatch;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.OptionalDouble;
 
 @SpringBootApplication
 public class Application {
@@ -59,6 +58,15 @@ public class Application {
         System.out.println("that took: " + stopWatch.getTotalTimeNanos());
         System.out.println("Old fashioned Average is: " + calculateAverageOldWay);
         System.out.println("............");
+
+        int sumOfAgesInt = employeeService.sumOfAgesInt(employees);
+        System.out.println("sumOfAgesList is: " + sumOfAgesInt);
+        System.out.println("............");
+
+        double sumOfAgesDouble = employeeService.sumOfAgesListDouble(employees);
+        System.out.println("sumOfAgesList is: " + sumOfAgesDouble);
+        System.out.println("............");
+
 
         return args -> {
             System.out.println("Let's inspect the beans provided by Spring Boot:");

@@ -53,5 +53,17 @@ public class EmployeeService {
         return (sum / totalEmployee);
     }
 
+    public Integer sumOfAgesInt(List<? extends Employee> employees) {
+        int sum = employees.stream().mapToInt(Employee::getAge).sum();
+
+        return sum;
+    }
+
+    public Double sumOfAgesListDouble(List<? extends Employee> employees) {
+        Double reduce = employees.stream().mapToInt(Employee::getAge).asDoubleStream().reduce(
+                0, Double::sum);
+
+        return reduce;
+    }
 }
 
