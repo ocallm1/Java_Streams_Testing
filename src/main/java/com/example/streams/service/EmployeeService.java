@@ -4,6 +4,7 @@ import com.example.streams.entities.Employee;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.OptionalDouble;
 
 
@@ -18,7 +19,8 @@ public class EmployeeService {
      * @return average age of given list of Employees
      */
     public Double concurrentAverage(List<? extends Employee> employees) {
-        OptionalDouble asDouble = employees.parallelStream().mapToInt(Employee::getAge).average();
+        OptionalDouble asDouble =
+                employees.parallelStream().mapToInt(Employee::getAge).average();
 
         return asDouble.isPresent() ? asDouble.getAsDouble() : 0D;
     }
@@ -54,14 +56,31 @@ public class EmployeeService {
     }
 
     public Integer sumOfAgesInt(List<? extends Employee> employees) {
-        int sum = employees.stream().mapToInt(Employee::getAge).sum();
+        int sum = employees.stream()
+                .mapToInt(Employee::getAge)
+                .sum();
 
         return sum;
     }
 
     public Double sumOfAgesListDouble(List<? extends Employee> employees) {
-        Double reduce = employees.stream().mapToInt(Employee::getAge).asDoubleStream().reduce(
-                0, Double::sum);
+        Double reduce =
+                employees.stream()
+                        .mapToInt(Employee::getAge)
+                        .asDoubleStream()
+                        .reduce(0, Double::sum);
+
+        return reduce;
+    }
+
+    public Double sumOfAgesListDoubleFromCork(List<? extends Employee> employees) {
+        Double reduce =
+                employees.stream()
+                        .filter(e -> Objects.nonNull(e.getAddress().getTown()))
+                        .filter(e -> e.getAddress().getTown().equalsIgnoreCase("Cork"))
+                        .mapToInt(Employee::getAge)
+                        .asDoubleStream()
+                        .reduce(0, Double::sum);
 
         return reduce;
     }
