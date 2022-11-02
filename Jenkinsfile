@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                 sh 'maven clean compile'
+                 sh 'mvn clean compile'
             }
         }
         stage('Test') {
             steps {
-               sh 'maven test'
+               sh 'mvn test'
             }
         }
         stage('Deploy') {
             steps {
-                 sh 'maven test'
+                 sh 'mvn test'
             }
         }
     }
