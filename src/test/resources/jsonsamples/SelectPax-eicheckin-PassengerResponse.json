@@ -1,0 +1,248 @@
+{
+    "messages": [],
+    "data": [
+        {
+            "bookingReferenceID": "2BY32J",
+            "flightInfo": [
+                {
+                    "flightStatus": "OPEN",
+                    "checkinStartDateTime": "2024-04-21T20:55:00.000-05:00",
+                    "fareType": "NONE",
+                    "business": false,
+                    "allPassengersCheckedIn": false,
+                    "flightSegmentInfo": [
+                        {
+                            "flightRPH": "1",
+                            "status": "CheckInOpen",
+                            "departureDate": "2024-04-22T20:55:00.000-05:00",
+                            "arrivalDate": "2024-04-22T10:25:00.000+01:00",
+                            "originAirportCode": "ORD",
+                            "originAirportName": "OHARE",
+                            "flightNumber": "0124",
+                            "originCity": "CHICAGO",
+                            "destinationAirportCode": "DUB",
+                            "destinationCity": "DUBLIN",
+                            "segmentTripDuration": "7h30m",
+                            "operatingAirline": {
+                                "airlineCode": "EI",
+                                "airlineName": "Aer Lingus",
+                                "flightNumber": "0124"
+                            },
+                            "marketingAirportCode": "EI",
+                            "marketingAirlineName": "Aer Lingus",
+                            "lastDestination": false,
+                            "flightType": "DCS",
+                            "fareType": "NONE",
+                            "selected": true
+                        }
+                    ],
+                    "originDestiantionRph": "1",
+                    "selected": true,
+                    "stopOverDuration": "0m",
+                    "tripDuration": "7h30m",
+                    "longHaul": true,
+                    "cdcMandatory": false,
+                    "return": false
+                }
+            ],
+            "passengerInfo": [
+                {
+                    "passengerRPH": "1",
+                    "title": "MR",
+                    "firstName": "MARK",
+                    "lastName": "KRUGER",
+                    "passengerType": "ADT",
+                    "ticketingInfo": [
+                        {
+                            "airlineAccountingCode": "053",
+                            "formAndSerialNumber": "2460367148",
+                            "couponInfo": [
+                                {
+                                    "couponNumber": "1",
+                                    "documentNumberCheckDigit": "1",
+                                    "flightRPHs": [
+                                        "1"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "apiInfo": {
+                        "passport": {
+                            "state": "REQUIRED",
+                            "mandatoryFields": {
+                                "NONE": [
+                                    "docHolderNationality",
+                                    "docId",
+                                    "expireDate"
+                                ]
+                            }
+                        },
+                        "personInfo": {
+                            "state": "REQUIRED",
+                            "mandatoryFields": {
+                                "NONE": [
+                                    "gender",
+                                    "birthDate"
+                                ]
+                            }
+                        },
+                        "residentCountry": {
+                            "state": "REQUIRED",
+                            "mandatoryFields": {
+                                "NONE": [
+                                    "countryName"
+                                ]
+                            }
+                        },
+                        "usPassportInfo": {
+                            "state": "NOT_REQUIRED",
+                            "contactDetails": {
+                                "state": "NOT_REQUIRED"
+                            }
+                        },
+                        "canadaResident": {
+                            "state": "NOT_REQUIRED",
+                            "landedCanadaResident": false
+                        },
+                        "primaryPhone": {
+                            "state": "NOT_REQUIRED"
+                        },
+                        "secondaryPhone": {
+                            "state": "NOT_REQUIRED"
+                        },
+                        "emailAddress": {
+                            "state": "NOT_REQUIRED"
+                        }
+                    },
+                    "additionalInfo": {
+                        "frequentFlyer": {
+                            "state": "REQUIRED",
+                            "remove": false
+                        },
+                        "specialAssistance": {
+                            "state": "REQUIRED",
+                            "available": [
+                                "WCHC",
+                                "WCHS",
+                                "WCHR"
+                            ]
+                        },
+                        "redressNumber": {
+                            "state": "REQUIRED"
+                        },
+                        "knownTravelerNumber": {
+                            "state": "REQUIRED"
+                        },
+                        "canadianRedressNumber": {
+                            "state": "NOT_REQUIRED"
+                        },
+                        "email": {
+                            "address": "MARK.OCALLAGHAN@AERLINGUS.COM"
+                        },
+                        "phone": {
+                            "countryCode": "1",
+                            "areaCode": "1",
+                            "phoneNumber": "12345"
+                        }
+                    },
+                    "selected": false,
+                    "specialRequests": [
+                        {
+                            "airlineCode": "EI",
+                            "text": ".01BAGS PREPAID",
+                            "status": "HK",
+                            "flightSegmentInfo": {
+                                "departureDate": "2024-04-22T00:00:00.000Z",
+                                "originAirportCode": "ORD",
+                                "destinationAirportCode": "DUB",
+                                "operatingAirline": {
+                                    "flightNumber": "0124"
+                                },
+                                "lastDestination": false,
+                                "selected": false
+                            },
+                            "passengerRPH": "1",
+                            "flightRPH": "1",
+                            "type": "XBAG"
+                        }
+                    ]
+                }
+            ],
+            "passengerFlightInfo": [
+                {
+                    "passengerRPH": "1",
+                    "flightRPH": "1",
+                    "firstName": "MARK",
+                    "lastName": "KRUGER",
+                    "clearanceRequired": true,
+                    "checkedInStatus": "AwaitClearance",
+                    "selected": false,
+                    "apiInfo": {
+                        "passport": {
+                            "state": "REQUIRED",
+                            "mandatoryFields": {
+                                "NONE": [
+                                    "docHolderNationality",
+                                    "docId",
+                                    "expireDate"
+                                ]
+                            }
+                        },
+                        "personInfo": {
+                            "state": "REQUIRED",
+                            "mandatoryFields": {
+                                "NONE": [
+                                    "gender",
+                                    "birthDate"
+                                ]
+                            }
+                        },
+                        "residentCountry": {
+                            "state": "REQUIRED",
+                            "mandatoryFields": {
+                                "NONE": [
+                                    "countryName"
+                                ]
+                            }
+                        },
+                        "usPassportInfo": {
+                            "state": "NOT_REQUIRED",
+                            "contactDetails": {
+                                "state": "NOT_REQUIRED"
+                            }
+                        },
+                        "canadaResident": {
+                            "state": "NOT_REQUIRED",
+                            "landedCanadaResident": false
+                        },
+                        "primaryPhone": {
+                            "state": "NOT_REQUIRED"
+                        },
+                        "secondaryPhone": {
+                            "state": "NOT_REQUIRED"
+                        },
+                        "emailAddress": {
+                            "state": "NOT_REQUIRED"
+                        }
+                    },
+                    "estaStatus": "SUCCESS",
+                    "apisStatus": "CLEARED",
+                    "seatSelected": false,
+                    "nationalityRequired": false
+                }
+            ]
+        }
+    ],
+    "extensions": [],
+    "statusCode": "success",
+    "config": {
+        "properties": {
+            "responseFactoryConfiguration": {
+                "activeSessionTime": "1200",
+                "popUpDisplayTime": "120"
+            }
+        }
+    },
+    "exceptionIdList": ""
+}

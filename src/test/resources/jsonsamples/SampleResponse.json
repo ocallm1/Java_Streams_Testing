@@ -1,0 +1,81 @@
+{
+    "id": "YourUniqueId",
+    "flightInformation": {
+        "operatingAirline": "ABC",
+        "flightNumber": "123",
+        "departure": {
+            "name": "JOHN F KENNEDY",
+            "city": "New York",
+            "locationCode": "JFK",
+            "terminal": "TERMINAL 5",
+            "gate": "A10"
+        },
+        "arrival": {
+            "name": "Dublin",
+            "city": "Dublin",
+            "locationCode": "DUB",
+            "terminal": "TERMINAL 1",
+            "gate": "A10"
+        },
+        "boardingDateTime": "2023-12-19T20:20:00",
+        "gateClosingDateTime": "2023-12-19T20:40:00",
+        "departureDateTime": "2023-12-19T20:50:00",
+        "flightStatus": "On Time"
+    },
+    "passengerInformation": {
+        "type": "ADT",
+        "name": {
+            "title": "MR",
+            "firstName": "Gary",
+            "middleName": "Paul",
+            "lastName": "Doe"
+        },
+        "seat": {
+            "number": "7B"
+        },
+        "ticketing": {
+            "ticketNumber": "5324437810972",
+            "couponNumber": "C1",
+            "ticketType": "ELECTRONIC"
+        },
+        "checkInSeqNumber": "31",
+        "boardingZone": "E",
+        "cabinClass": "Y",
+        "fare": "FLEX",
+        "clearanceInformationStatus": "CLEARED"
+    },
+    "loyaltyInformation": [
+        {
+            "airline": "EI",
+            "program": "ABC123",
+            "number": "234",
+            "tier": {
+                "code": "LoyaltyName123",
+                "name": "TierName1"
+            }
+        },
+        {
+            "airline": "ABC2",
+            "program": "ABC1234",
+            "number": "1234",
+            "tier": {
+                "code": "LoyaltyName123",
+                "name": "TierName1"
+            }
+        }
+    ],
+    "entitlementInformation": {
+        "priorityBoarding": "Y",
+        "cabinBags": "Y",
+        "numberOfBags": "3"
+    },
+    "details": {
+        "barcode": "12345678901234567890",
+        "barcodeVersion": "8",
+        "signature": "stringThree",
+        "stationFlag": {
+            "code": "string",
+            "name": "stringTwo"
+        }
+    }
+}

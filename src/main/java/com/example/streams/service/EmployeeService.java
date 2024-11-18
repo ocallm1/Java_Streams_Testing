@@ -64,18 +64,16 @@ public class EmployeeService {
     }
 
     public Double sumOfAgesListDouble(List<? extends Employee> employees) {
-        Double reduce =
-                employees.stream()
-                        .mapToInt(Employee::getAge)
-                        .asDoubleStream()
-                        .reduce(0, Double::sum);
+        Double reduce = employees.stream()
+                    .mapToInt(Employee::getAge)
+                    .asDoubleStream()
+                    .reduce(0, Double::sum);
 
         return reduce;
     }
 
     public Double sumOfAgesListDoubleFromCork(List<? extends Employee> employees) {
-        Double reduce =
-                employees.stream()
+        Double reduce = employees.stream()
                         .filter(e -> Objects.nonNull(e.getAddress().getTown()))
                         .filter(e -> e.getAddress().getTown().equalsIgnoreCase("Cork"))
                         .mapToInt(Employee::getAge)
