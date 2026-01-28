@@ -1,8 +1,8 @@
 package com.example.streams.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.ClassPathResource;
+import tools.jackson.databind.ObjectMapper;
 
 import java.io.*;
 import java.nio.file.Files;
